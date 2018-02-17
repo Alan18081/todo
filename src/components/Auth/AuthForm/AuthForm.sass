@@ -1,0 +1,54 @@
+@import '../../../styles/vars'
+@import '../../../styles/smart-grid'
+
+.AuthForm
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 750px
+  margin: 0 auto
+  padding: 40px 0
+  border-radius: 5px
+  box-shadow: 0 9px 30px 5px rgba(#1b030b,.35)
+  +xs-block
+    padding: 20px 10px
+    margin: 0 5px
+
+.AuthForm__form
+  width: 100%
+  text-align: center
+
+.AuthForm__title
+  color: $red
+  font-family: 'LatoBold', sans-serif
+  font-size: 30px
+  margin-bottom: 48px
+
+.AuthForm__input
+  max-width: 360px
+  margin: 0 auto 23px
+
+.AuthForm__link
+  display: block
+  color: #272023
+  text-decoration: none
+  font-size: 18px
+  cursor: pointer
+  border: none
+  background: none
+  margin-top: 20px
+  transition: all .5s ease
+  &:hover
+    color: $red
+
+.AuthForm__error
+  color: $red
+  text-transform: lowercase
+  font-family: 'LatoRegular', sans-serif
+  margin: 5px 0
+  &:first-letter
+    text-transform: uppercase
+
+.AuthForm__message
+  margin-bottom: 10px
+  font-family: 'LatoBold', sans-serif

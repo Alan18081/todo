@@ -1,0 +1,43 @@
+@import '../../../../styles/vars'
+
+.UserDataItem
+  display: flex
+  align-items: center
+  margin-bottom: 55px
+
+.UserDataItem_big.UserDataItem_editing
+  align-items: flex-start
+
+.UserDataItem_big
+  .UserDataItem__caption, .UserDataItem__input input
+    font-size: 30px
+    font-family: 'LatoBold', sans-serif
+  .UserDataItem__input input
+    padding: 15px
+    border: 1px solid #cccccc
+  .UserDataItem__icon_editing
+    width: 43px
+    height: 45px
+
+
+
+.UserDataItem__input
+  margin-bottom: 0
+
+.UserDataItem__btn
+  cursor: pointer
+  border: none
+  margin-left: 23px
+  background: none
+  svg
+    width: 20px
+    height: 20px
+    fill: #ccc
+    transition: all .5s ease
+  .UserDataItem__icon_editing
+    fill: #272023
+  &:hover
+    svg
+      fill: #272023
+    .UserDataItem__icon_editing
+      fill: $red

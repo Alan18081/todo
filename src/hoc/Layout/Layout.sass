@@ -1,0 +1,26 @@
+@import '../../styles/vars'
+@import '../../styles/smart-grid'
+
+.Layout__content
+  margin-top: 60px
+  padding-bottom: 50px
+
+.Layout__error
+  text-align: center
+  padding: 50px 10px
+  color: $red
+  +sm-block
+    font-size: 20px
+
+.Layout__btn
+  background: none
+  border: none
+  transition: all .5s ease
+  cursor: pointer
+  display: block
+  margin: 0 auto
+  svg
+    width: 50px
+  &:hover
+    svg
+      fill: $red

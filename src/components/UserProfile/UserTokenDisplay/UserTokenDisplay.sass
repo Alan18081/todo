@@ -1,0 +1,56 @@
+@import '../../../styles/vars'
+@import '../../../styles/smart-grid'
+
+.UserTokenDisplay
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 40px
+
+.UserTokenDisplay__info
+  font-size: 18px
+  +sm-block
+    margin-bottom: 10px
+
+.UserTokenDisplay__time
+  font-family: 'LatoBold', sans-serif
+  color: $red
+  margin: 0 5px
+  display: inline-block
+
+.UserTokenDisplay__checkedIcon
+  width: 16px
+  height: 16px
+  margin-right: 8px
+  fill: #ccc
+
+.UserTokenDisplay__circle
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  border: 1px solid #cccccc
+  margin-right: 8px
+
+.UserTokenDisplay__autoRefresh
+  display: flex
+  align-items: center
+  background: none
+  border: none
+  font-size: 14px
+  cursor: pointer
+  color: #cccccc
+  +sm-block
+    margin-top: 10px
+
+.UserTokenDisplay__refreshIcon
+  width: 16px
+  height: 16px
+  fill: #272023
+  margin-right: 10px
+
+.UserTokenDisplay__autoRefresh_active
+  color: #272023
+  svg
+    fill: #272023
+  
